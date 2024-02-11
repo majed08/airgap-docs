@@ -76,8 +76,6 @@ module.exports = {
           label: "Features",
           items: [
             "airgap-wallet/features/identicons",
-            "airgap-wallet/features/exchange",
-            "airgap-wallet/features/ramp",
             "airgap-wallet/features/darkmode",
             "airgap-wallet/features/api-check",
             "airgap-wallet/features/staking",
@@ -91,7 +89,11 @@ module.exports = {
     {
       type: "category",
       label: "AirGap Knox",
-      items: ["airgap-knox/introduction", "airgap-knox/device"],
+      items: [
+        "airgap-knox/introduction",
+        "airgap-knox/device",
+        "airgap-knox/faqs",
+      ],
       collapsed: true,
     },
     {
@@ -221,6 +223,15 @@ module.exports = {
           ],
           collapsed: true,
         },
+        {
+          type: "category",
+          label: "Rootstock (RBTC)",
+          items: [
+            "currencies/rootstock/introduction",
+            "currencies/rootstock/wallet-compatibility",
+          ],
+          collapsed: true,
+        },
       ],
       collapsed: false,
     },
@@ -266,6 +277,8 @@ module.exports = {
       items: [
         "guides/metamask",
         "guides/metamask-mobile",
+        "guides/specter",
+        "guides/imToken",
         "guides/rabby",
         "guides/bip-85",
         "guides/sapling",
@@ -285,6 +298,7 @@ module.exports = {
         "guides/address-book",
       ],
     },
+    "isolated-module",
     "FAQ",
     "glossary",
     "CHANGELOG-VAULT",
